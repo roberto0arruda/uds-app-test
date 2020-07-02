@@ -1,0 +1,59 @@
+body {
+  padding-top: 56px;
+  background-color: #fbfbfb;
+}
+
+.btn-full {
+  width: 100%;
+}
+
+.preloader {
+  position: absolute;
+  background: #000;
+  opacity: .8;
+  width: 100%;
+  height: 100%;
+  z-index: 999999999999;
+  text-align: center;
+}
+
+.preloader img {
+  width: 100px;
+  margin-top: 10%;
+}
+
+.bg-vueacai {
+  background: #008cff;
+}
+
+.logo {
+  width: 70px;
+  max-width: 100%;
+}
+
+.title-tenant {
+  color: #008cff;
+  margin: 10px 0;
+}
+
+.card {
+  border: 1px solid #008cff;
+}
+
+
+.card-footer-custom {
+  padding: .75rem 1.25rem;
+  background-color: #008cff;
+  border-top: 1px solid #008cff;
+  text-align: center;
+}
+
+.disabled .card-footer-custom {
+  background: #9eb5d8;
+  border-top: 1px solid #9eb5d8;
+  cursor: no-drop;
+}
+
+.disabled .card-footer-custom a {
+  cursor: no-drop;
+}
