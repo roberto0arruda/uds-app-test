@@ -10,7 +10,7 @@
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
               <a class="nav-link" href="#">
-                <i class="fas fa-file"></i> (2)
+                <i class="fas fa-file-alt"></i> (2)
               </a>
             </li>
           </ul>

@@ -15,6 +15,7 @@
 <script>
 import 'bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
+import '@fortawesome/fontawesome-free/css/all.min.css'
 
 import HeaderComponent from "./_partial/Header"
 import FooterComponent from "./_partial/Footer"
