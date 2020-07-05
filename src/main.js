@@ -7,6 +7,11 @@ import '@/plugins/element-ui'
 
 Vue.config.productionTip = false
 
+/**
+ * Global Components
+ */
+Vue.component('preloader-component', () => import('./components/Preloader.vue'))
+
 new Vue({
   render: h => h(DefaultTemplate),
   router
