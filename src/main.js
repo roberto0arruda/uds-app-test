@@ -2,6 +2,7 @@ import Vue from 'vue'
 import DefaultTemplate from './layouts/DefaultTemplate.vue'
 
 import router from './routes'
+import store from './store'
 
 import '@/plugins/element-ui'
 
@@ -14,5 +15,6 @@ Vue.component('preloader-component', () => import('./components/Preloader.vue'))
 
 new Vue({
   render: h => h(DefaultTemplate),
-  router
+  router,
+  store
 }).$mount('#app')
