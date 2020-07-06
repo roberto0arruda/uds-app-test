@@ -1,11 +1,11 @@
 export const state = {
-    preloder: false,
+    preloader: false,
     textPreloader: 'Carregando...'
 }
 
 export const mutations = {
     SET_PRELOADER (state, status) {
-        state.preloder = status
+        state.preloader = status
         state.textPreloader = 'Carregando...'
     },
 
