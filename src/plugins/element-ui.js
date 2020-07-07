@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import 'element-ui/lib/theme-chalk/index.css'
 
-import { Button, Select, Option, Dialog, Form, FormItem, Steps, Step, Badge, Tag } from 'element-ui'
+import { Button, Select, Option, Dialog, Form, FormItem, Steps, Step, Badge, Tag, Table, TableColumn } from 'element-ui'
 
 import lang from 'element-ui/lib/locale/lang/pt-br'
 import locale from 'element-ui/lib/locale'
@@ -19,3 +19,5 @@ Vue.component(Steps.name, Steps)
 Vue.component(Step.name, Step)
 Vue.component(Badge.name, Badge)
 Vue.component(Tag.name, Tag)
+Vue.component(Table.name, Table)
+Vue.component(TableColumn.name, TableColumn)

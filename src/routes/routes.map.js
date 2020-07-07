@@ -1,12 +1,13 @@
 import Home from '@/pages/Home'
 import Catalogo from '@/pages/Catalogo'
+import Pedidos from '@/pages/Pedidos'
 
 const routes = [
-    // {
-    //     path: '/detalhe',
-    //     component: Detalhe,
-    //     name: 'detalhe'
-    // },
+    {
+        path: '/listar-pedidos',
+        component: Pedidos,
+        name: 'pedidos'
+    },
 
     {
         path: '/montar-acai',
@@ -19,7 +20,6 @@ const routes = [
         component: Home,
         name: 'home'
     }
-
 ]
 
 export default routes
