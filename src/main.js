@@ -1,8 +1,21 @@
 import Vue from 'vue'
-import App from './App.vue'
+import DefaultTemplate from './layouts/DefaultTemplate.vue'
+
+import router from './routes'
+import store from './store'
+
+import '@/plugins/element-ui'
+import '@/plugins/vue-toastify'
 
 Vue.config.productionTip = false
 
+/**
+ * Global Components
+ */
+Vue.component('preloader-component', () => import('./components/Preloader.vue'))
+
 new Vue({
-  render: h => h(App),
+  render: h => h(DefaultTemplate),
+  router,
+  store
 }).$mount('#app')
