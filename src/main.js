@@ -15,7 +15,7 @@ Vue.config.productionTip = false
 Vue.component('preloader-component', () => import('./components/Preloader.vue'))
 
 new Vue({
-  render: function (h) { return h(DefaultTemplate) },
+  render: h => h(DefaultTemplate),
   router,
   store
 }).$mount('#app')
