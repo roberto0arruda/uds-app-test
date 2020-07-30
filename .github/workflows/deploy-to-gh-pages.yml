@@ -17,7 +17,8 @@ jobs:
       - name: Install and Build 🔧
         run: |
           npm install
-          npm run build
+          npm run build --modern
+          # Create .nojekyll Evitar erros de criação de páginas do Github
           touch dist/.nojekyll
 
       - name: Deploy 🚀
