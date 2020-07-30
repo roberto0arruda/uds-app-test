@@ -17,7 +17,8 @@ jobs:
       - name: Install and Build 🔧
         run: |
           npm install
-          npm run build --modern --no-unsafe-inline
+          npm run build
+          touch dist/.nojekyll
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@releases/v3
