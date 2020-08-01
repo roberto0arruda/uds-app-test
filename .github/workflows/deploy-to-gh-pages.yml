@@ -3,7 +3,7 @@ name: Build and Deploy
 on:
   push:
     branches:
-      - develop
+      - master
 
 jobs:
   build-and-deploy:
@@ -18,8 +18,6 @@ jobs:
         run: |
           npm install
           npm run build --modern --no-unsafe-inline
-          # Create .nojekyll Evitar erros de criação de páginas do Github
-          touch dist/.nojekyll
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@releases/v3
