@@ -1,14 +1,8 @@
 <template>
-  <div
-    class="preloader"
-    v-if="preloader"
-  >
-    <img
-      src="@/assets/imgs/preloader.gif"
-      alt="Carregando..."
-    >
-    <p>{{ textPreloader }}</p>
-  </div>
+  <v-overlay :value="preloader">
+    <v-progress-circular indeterminate size="64" />
+    <span> {{ textPreloader }}</span>
+  </v-overlay>
 </template>
 
 <script>

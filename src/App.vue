@@ -1,17 +1,17 @@
 <template>
   <v-app>
     <v-app-bar app color="primary" dark>
-      <div class="d-flex align-center">
-        <v-img
-          alt="Vuetify Logo"
-          class="shrink mr-2"
-          contain
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
-          transition="scale-transition"
-          width="40"
-        />
+      <router-link to="/">
+        <div class="d-flex align-center">
+          <v-img
+            alt="Vuetify Logo"
+            class="shrink mr-2"
+            contain
+            src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
+            transition="scale-transition"
+            width="40"
+          />
 
-        <router-link to="/">
           <v-img
             alt="Vuetify Name"
             class="shrink mt-1 hidden-sm-and-down"
@@ -20,8 +20,8 @@
             src="@/assets/imgs/logo-vueacai.png"
             width="100"
           />
-        </router-link>
-      </div>
+        </div>
+      </router-link>
 
       <v-spacer></v-spacer>
 
@@ -49,6 +49,8 @@
 
       <span class="white--text">&copy; {{ new Date().getFullYear() }}</span>
     </v-footer>
+
+    <preloader-component />
   </v-app>
 </template>
 
